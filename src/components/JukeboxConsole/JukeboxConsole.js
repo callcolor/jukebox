@@ -32,7 +32,6 @@ export default class extends Component {
       document.getElementById('jukebox-console-input').focus();
       document.getElementById('jukebox-audio-controls').play();
     });
-    document.getElementById('jukebox-audio-controls').play();
     this.getNowPlaying();
     setInterval(this.getNowPlaying, 5000);
   }
