@@ -1,0 +1,28 @@
+.jukebox-console {
+  color: green;
+  font-size: 2vh;
+  height: 60vh;
+}
+
+.jukebox-console .ticker {
+  position: relative;
+  height: 100%;
+}
+
+.jukebox-console .ticker pre {
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+  color: green;
+}
+
+.jukebox-console .console {
+    width: 100%;
+    color: greenyellow;
+    background: black;
+    border: none;
+}
+
+.jukebox-console .console:focus {
+    outline-width: 0;
+}
