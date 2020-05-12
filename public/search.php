@@ -14,7 +14,8 @@ function ytTime($youtube_time, $format = false){
     return $start->getTimeStamp();
 }
 
-$key = "AIzaSyAI9ZdwDlDp0Se5VXckDEgbrDxHl7iyLGo";
+$key = $_ENV["GOOGLE_JUKEBOX_KEY"];
+
 $query = urlencode($_GET['search']);
 if (strlen($query) < 1){
   header("Content-Type: application/json");
