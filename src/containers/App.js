@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import Jukebox from '../views/Jukebox/Jukebox';
 
@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Route path="/" component={Jukebox} />
+          <Routes>
+            <Route path="/" element={<Jukebox/>} />
+          </Routes>
         </Router>
       </div>
     );

@@ -21,7 +21,9 @@ export default class extends Component {
           </div>
         </div>
         <div className="visualizer-audio-wrapper">
-          <audio style={{display: 'none'}} id="jukebox-audio-controls" crossOrigin="anonymous" src="https://jukebox.kansascitygeek.com:8700/;" />
+          <audio id="jukebox-audio-controls" crossOrigin="anonymous">
+            <source src="https://jukebox.kansascitygeek.com:8700/;" type="audio/mpeg"/>
+          </audio>
           <AudioSpectrum
             id="audio-canvas"
             height={200}
